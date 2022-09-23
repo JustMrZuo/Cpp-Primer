@@ -139,10 +139,10 @@ by a newline.
 ```cpp
 #include <iostream>
 
-int main()
+int main()//转义序列编写
 {
-    std::cout << 2 << "\115\012";
-    std::cout << 2 << "\t\115\012";
+    std::cout << 2 << "\115\012";//分别为字符M与换行，如果8进制数字超过三个则只有前三位构成转义字符。
+    std::cout << 2 << "\t\115\012";依次为横向制表、字符M和换行。
     return 0;
 }
 ```
